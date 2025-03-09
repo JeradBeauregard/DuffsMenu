@@ -8,7 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "An express app CMS for Duffs Famous Wings",
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
