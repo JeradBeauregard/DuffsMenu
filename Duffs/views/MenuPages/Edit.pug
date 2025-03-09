@@ -1,0 +1,30 @@
+extends ../layout
+
+block layout-content
+    div.content
+        .headercontainer
+            h1 Edit Menu Item
+
+        form(action="/Menu/EditMenuItem" method="POST")
+            input(type="hidden" name="id" id="id" value=menuItem._id)
+            label(for="name") Name:
+            input(type="text" name="name" id="name" value=menuItem.name required)
+            br
+            label(for="description") Description:
+            textarea(name="description" id="description" required)= menuItem.description
+            br
+            label(for="price") Price:
+            input(type="number" step="0.01" name="price" id="price" value=menuItem.price required)
+            br
+            label(for="type") Type:
+            select(name="type" id="type" required)
+                option(value="starter") Starter
+                option(value="kids") Kids
+                option(value="entrée") Entrée
+                option(value="wrap") Wrap
+                option(value="wings") Wings
+                option(value="side") Side
+                option(value="Beverage") Beverage
+                option(value="dessert") Dessert
+            br
+            button(type="submit") Save

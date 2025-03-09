@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title | Duff's
+        link(rel="stylesheet" href="/styles.css")
+        
+
+    body
+        
+        nav.navbar
+            .navcontainer 
+                a.logo(href="/") Duff's
+                ul.listcontainer
+                    li
+                        a(href="/menu/list") Menu List
+                    li
+                        a(href="/stores/list") Store List
+
+        
+        .maincontainer
+            block layout-content
+
+        
+        footer.footer
+            p &copy; 2025 Duff's Famous Wings
+
+       

@@ -1,0 +1,27 @@
+extends ../layout
+
+block layout-content
+    div.content
+        
+        h1 Menu Items
+        a(href=`/Menu/New`) Add a new Item
+        table
+            thead
+                tr
+                    th Name
+                    th Description
+                    th Price
+                    th Type
+                    th Actions
+            tbody
+                each item in menuItems
+                    tr
+                        td= item.name
+                        td= item.description
+                        td $#{Number(item.price).toFixed(2)}
+                        td= item.type
+                        td
+                            a(href=`/Menu/Edit/${item._id}`)#edit Edit
+                            a(href=`/Menu/Delete/${item._id}`)#delete Delete
+
+

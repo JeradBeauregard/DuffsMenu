@@ -1,0 +1,258 @@
+/* styling for layout */
+body {
+    background-color: white;
+    color: black;
+    min-height: 100vh; /*force footer to the bottom */
+    display: flex;
+    flex-direction: column;
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Navbar items*/
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+
+    padding: 15px;
+}
+
+.logo {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    
+}
+
+
+/* Main Container */
+.maincontainer {
+    flex-grow: 1;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.navcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15em;
+    padding-right: 15em;
+}
+
+.listcontainer {
+    display: flex;
+    gap: 4em;
+    list-style: none;
+}
+
+.listcontainer a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: inline-block; 
+
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+/* for a little flare of drama in our nav bar*/
+.listcontainer a:hover {
+    color: grey;
+    transform: scale(1.2); 
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    
+}
+
+/* for tables */
+
+h1 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.content{
+    padding: 40px 20px;
+    
+}
+
+.headercontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* affects all a elements in content, great if we want add pages because we can reuse css */
+/* without having to rewrite the html with classes*/
+
+/* for create buttons */
+.content a {
+    
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content a:hover {
+    background-color: black;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+
+/*edit and delete buttons */
+#edit{
+    background-color: orange;
+    color: white;
+    margin-right: 10px;
+    padding: 5px 10px;
+
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#delete{
+    background-color: red;
+    color: white;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    text-decoration: none;
+   
+}
+/* hover for edit and delete buttons */
+td a:hover {
+    opacity: 0.8;
+}
+/*home page body image */
+#homebanner {
+    width: 100vw; 
+    height: auto; 
+        
+}
+/* query for nav bar elements */
+@media (max-width: 768px) {
+    .navcontainer {
+        flex-direction: column; 
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .listcontainer {
+        flex-direction: column; 
+        gap: 1em; 
+        padding: 0;
+    }
+}
+
+/* for form styling */
+
+
+form {
+    max-width: 600px;
+    margin: 40px auto; /*to center form */
+    padding: 20px;
+    background: #fff;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+input,
+textarea,
+select {
+    width: 95%; /* width inside form */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* focus effects, looks nice right */
+input:focus {
+    border-color: red;
+    outline: none;
+    box-shadow: 0 0 5px rgba(236, 17, 17, 0.5);
+}
+textarea:focus {
+    border-color: red;
+    outline: none;
+    box-shadow: 0 0 5px rgba(236, 17, 17, 0.5);
+}
+
+select:focus {
+    border-color: red;
+    outline: none;
+    box-shadow: 0 0 5px rgba(236, 17, 17, 0.5);
+}
+
+
+button {
+    width: 100%;
+    background-color: red;
+    color: white;
+    
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+

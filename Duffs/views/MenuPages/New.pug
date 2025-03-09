@@ -1,0 +1,33 @@
+extends ../layout
+
+block layout-content
+    div.content
+        .headercontainer
+            h1 Add New Menu Item
+
+        form(action="/Menu/AddMenuItem" method="POST")
+            label(for="name") Name:
+            input(type="text" name="name" id="name" required)
+            br
+
+            label(for="description") Description:
+            textarea(name="description" id="description" required)
+            br
+
+            label(for="price") Price:
+            input(type="number" step="0.01" name="price" id="price" required)
+            br
+
+            label(for="type") Type:
+            select(name="type" id="type" required)
+                option(value="starter") Starter
+                option(value="kids") Kids
+                option(value="entrée") Entrée
+                option(value="wrap") Wrap
+                option(value="wings") Wings
+                option(value="side") Side
+                option(value="Beverage") Beverage
+                option(value="dessert") Dessert
+            br
+
+            button(type="submit") Add Menu Item

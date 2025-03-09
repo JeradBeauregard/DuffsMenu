@@ -1,0 +1,25 @@
+extends ../layout
+
+block layout-content
+    div.content
+       
+        h1 Store Locations
+        a(href="/Stores/New") Add a new Store
+        table
+            thead
+                tr
+                    th Address
+                    th Phone Number
+                    th Open
+                    th Closed
+                    th Actions
+            tbody
+                each store in stores
+                    tr
+                        td= store.address
+                        td= store.phone
+                        td= store.open
+                        td= store.closed
+                        td
+                            a(href=`/stores/Edit/${store._id}`)#edit Edit
+                            a(href=`/stores/Delete/${store._id}`)#delete Delete
