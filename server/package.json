@@ -2,13 +2,15 @@
   "name": "duffs",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "An express app CMS for Duffs Famous Wings",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./index.js"
+    "start": "node index.js",
+    "dev": "nodemon ./index.js",
+    "build": "cd ../client && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "description": "An express app CMS for Duffs Famous Wings",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
