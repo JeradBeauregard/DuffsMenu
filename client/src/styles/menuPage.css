@@ -1,0 +1,69 @@
+@import url('//fonts.googleapis.com/earlyaccess/jejuhallasan.css');
+
+
+.menu-main-container{
+    width: 925px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 40px auto;
+    gap: 25px;
+    
+}
+
+.menu-header-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-title{
+    color: #C61D23;
+font-family: Knewave;
+font-size: 50.241px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu-nav a{
+color: #000;
+font-family: Knewave;
+font-size: 28.261px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+}
+
+.menu-nav a:hover{
+    color: #C61D23;
+}
+
+
+.menu-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-section h2{
+    color: #000;
+font-family: Knewave;
+font-size: 31.401px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}

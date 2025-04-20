@@ -1,0 +1,64 @@
+@import url('//fonts.googleapis.com/earlyaccess/jejuhallasan.css');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+
+    margin: 0;
+    
+}
+
+.home-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 925px;
+    margin: 0 auto; 
+  }
+  
+.location-section-title{
+    color: #000;
+font-family: Knewave;
+font-size: 80px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+margin: 10px;
+}
+
+
+.location-card-container{
+    display: flex;
+    gap: 18px;
+}
+
+.hero-image{
+    width: 100%;
+height: auto;
+flex-shrink: 0;
+}
+
+.ubereats-section{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.ubereats-section h3{
+color: #000;
+font-family: Knewave;
+font-size: 50.258px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.ubereats-logo{
+    width: 314.114px;
+height: 51.044px;
+flex-shrink: 0;
+aspect-ratio: 314.11/51.04;
+}

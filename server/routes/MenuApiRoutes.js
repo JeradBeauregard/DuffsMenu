@@ -24,6 +24,12 @@ const result = await menuService.ListMenuItem(id);
 response.json(result);
 });
 
+router.get("/ListMenuItemsByType/:type", async (request,response)=>{
+const { type } = request.params;
+const result = await menuService.ListMenuItemsByType(type);
+response.json(result);
+});
+
 router.post("/AddMenuItem", async (request, response)=>{
     const { name, description, price, type } = request.body;
     const result = await menuService.AddMenuItem(name,description,price,type);
