@@ -1,3 +1,12 @@
-"dependencies": {
-  "dotenv": "^16.4.7"
-}
+{
+    "name": "duffs-fullstack",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "cd client && npm install && npm run build",
+      "start": "cd server && node index.js"
+    },
+    "dependencies": {
+      "dotenv": "^16.4.7"
+    }
+  }
+  
