@@ -35,11 +35,11 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
 // API base route
-app.get("/", (req, res) => {
+/*app.get("/", (req, res) => {
   res.render("index");
-});
+});*/
 
-// 🔁 Fallback to React for any other route
+// Fallback to React for any other route
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "client", "build", "index.html"));
 });
