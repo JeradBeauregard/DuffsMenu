@@ -16,6 +16,12 @@ async function ListMenuItem(id){
     return menuItem
 }
 
+async function ListMenuItemsByType(type) {
+    const db = await connection(); 
+    const menuItems = await db.collection("Menu").find({ type: type }).toArray();
+    return menuItems;
+  }
+
 //Create
 
 async function AddMenuItem(name,description,price,type){
@@ -53,6 +59,7 @@ module.exports = {
 
     ListMenuItems,
     ListMenuItem,
+    ListMenuItemsByType,
     EditMenuItem,
     AddMenuItem,
     DeleteItem

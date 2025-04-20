@@ -1,0 +1,60 @@
+@import url('//fonts.googleapis.com/earlyaccess/jejuhallasan.css');
+
+
+#logo{
+    width: 150px;
+    height: 85px;
+}
+
+.logo{
+    width: 150px;
+    height: 85px;
+}
+
+header{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: #222;
+    box-shadow: 0px 4.712px 4.712px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header-inner-container{
+    width: 925px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    gap: 42px;
+    list-style: none;
+}
+
+.header-link a{
+    text-decoration: none;
+    color: white;
+    color: #FFF;
+    font-family: 'Jeju Hallasan', cursive;
+    font-size: 28.27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block; /* Needed for transform to behave nicely */
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.header-link a:hover{
+   
+    text-shadow:
+    -1px -1px 0 #F2994A,
+     1px -1px 0 #F2994A,
+    -1px  1px 0 #F2994A,
+     1px  1px 0 #F2994A;
+    transform: scale(1.2); /* 20% increase */
+}
+
